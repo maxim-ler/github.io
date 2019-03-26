@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Intro';
+    src: url('Intro-Bold.eot');
+    src: url('Intro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Intro-Bold.woff2') format('woff2'),
+        url('Intro-Bold.woff') format('woff'),
+        url('Intro-Bold.ttf') format('truetype'),
+        url('Intro-Bold.svg#Intro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

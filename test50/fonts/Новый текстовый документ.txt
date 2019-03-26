@@ -1,0 +1,33 @@
+@font-face {
+	font-family: 'TimesNew';
+	src: url('../fonts/times/TimesNewRomanPSMT.eot');
+	src: url('../fonts/times/TimesNewRomanPSMT.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/times/TimesNewRomanPSMT.woff2') format('woff2'),
+		url('../fonts/times/TimesNewRomanPSMT.woff') format('woff'),
+		url('../fonts/times/TimesNewRomanPSMT.ttf') format('truetype'),
+		url('../fonts/times/TimesNewRomanPSMT.svg#TimesNewRomanPSMT') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TahomaRegular';
+	src: url('../fonts/tahoma/regular/Tahoma.eot');
+	src: url('../fonts/tahoma/regular/Tahoma.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/tahoma/regular/Tahoma.woff2') format('woff2'),
+		url('../fonts/tahoma/regular/Tahoma.woff') format('woff'),
+		url('../fonts/tahoma/regular/Tahoma.ttf') format('truetype'),
+		url('../fonts/tahoma/regular/Tahoma.svg#Tahoma') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TahomaBold';
+	src: url('../fonts/tahoma/bold/Tahoma-Bold.eot');
+	src: url('../fonts/tahoma/bold/Tahoma-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/tahoma/bold/Tahoma-Bold.woff2') format('woff2'),
+		url('../fonts/tahoma/bold/Tahoma-Bold.woff') format('woff'),
+		url('../fonts/tahoma/bold/Tahoma-Bold.ttf') format('truetype'),
+		url('../fonts/tahoma/bold/Tahoma-Bold.svg#Tahoma-Bold') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}

@@ -1,0 +1,145 @@
+.slider1 {
+	margin-bottom: 130px;
+
+	.container {
+		h2 {
+			font-family: 'MyriadProBoldCond', sans-serif;
+			font-size: 36px;
+			color: #6c6c6c;
+			font-weight: 700;
+			margin-bottom: 15px;
+			
+			span {
+				display: block;
+				font-family: 'MyriadProBoldCond', sans-serif;
+				font-size: 36px;
+				color: #245c26;
+				text-transform: uppercase;
+				font-weight: 700;
+			}
+		}
+
+		.slider1-slides {
+			
+			.slider1-slide {
+				text-align: center;
+				padding: 15px 0;
+				border: 1px solid #cfcfcf;
+				margin-right: 15px;
+				margin-left: 15px;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				box-shadow: 1px 0 10px #cfcfcf;
+				box-shadow: -1px 0 10px #cfcfcf;
+				box-shadow: 0 1px 10px #cfcfcf, 0 -1px 10px #cfcfcf;
+
+				a {
+					display: block;
+					
+					img {
+						margin: auto;
+					}
+				}
+
+				h3, span {
+					font-family: 'MyriadProREgular', sans-serif;
+					font-size: 18px;
+					color: #245c26;
+					font-weight: 400;
+					margin-bottom: 20px;
+				}
+
+				p {
+					font-family: 'MyriadProBold', sans-serif;
+					font-size: 30px;
+					color: #245c26;
+					font-weight: 700;
+					margin-bottom: 35px;
+				}
+
+				button {
+					padding: 15px 65px;
+				}
+			}
+
+			.slider1-slide1, .slider1-slide2, .slider1-slide3, .slider1-slide4, .slider1-slide5 {
+
+			}
+
+			.slick-prev {
+				top: 50%;
+				right: auto;
+				left: -60px;
+				z-index: 10;
+			
+				background: url('../img/arrow-left.png') 0 0 no-repeat;
+				width: 59px;
+				height: 59px;
+			
+				&:hover {
+					opacity: .8;
+				}
+				
+				&:before {
+					content: '';
+				}
+			}
+
+			.slick-next {
+				top: 50%;
+				right: -60px;
+				left: auto;
+				z-index: 10;
+				
+				background: url('../img/arrow-right.png') 0 0 no-repeat;
+				width: 59px;
+				height: 59px;
+			
+				&:hover {
+					opacity: .8;
+				}
+				
+				&:before {
+					content: '';
+				}	
+			}
+
+			.slick-dots {
+				bottom: -30px;
+				left: 50%;
+				-webkit-transform: translateX(-50%);
+				-ms-transform: translateX(-50%);
+				-o-transform: translateX(-50%);
+				transform: translateX(-50%);
+				
+				max-width: 300px;
+				height: 25px;
+
+				li {		
+					button {
+						&:before {
+							font-size: 16px;
+							color: #245c26;
+							opacity: 1;
+						}
+					}
+				}
+
+				// active
+				.slick-active {
+					button {
+						&:before {
+							font-size: 16px;
+							color: #7d7d7d;
+							opacity: 1;
+						}
+					}	
+				}
+			}
+			
+			.slick-slide {
+				outline: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Intro';
+    src: url('Intro-Black.eot');
+    src: url('Intro-Black.eot?#iefix') format('embedded-opentype'),
+        url('Intro-Black.woff2') format('woff2'),
+        url('Intro-Black.woff') format('woff'),
+        url('Intro-Black.ttf') format('truetype'),
+        url('Intro-Black.svg#Intro-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+

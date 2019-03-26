@@ -1,0 +1,178 @@
+* {
+	// outline: 1px solid rgba(0,0,0,.4);
+	box-sizing: border-box;
+}
+
+// one : for ie
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.clear {
+	clear: both;
+}
+
+html, body {
+	// to footer down
+	// width: 100%;
+	// height: 100%;
+}
+
+body {
+	margin: 0;
+
+	background-color: #fff;
+
+	// fonts
+	@font-face {
+    font-family: 'MyriadProRegular';
+    src: url('../fonts/MyriadProRegular/MyriadPro-Regular.eot');
+    src: url('../fonts/MyriadProRegular/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+	    url('../fonts/MyriadProRegular/MyriadPro-Regular.woff2') format('woff2'),
+	    url('../fonts/MyriadProRegular/MyriadPro-Regular.woff') format('woff'),
+	    url('../fonts/MyriadProRegular/MyriadPro-Regular.ttf') format('truetype'),
+	    url('../fonts/MyriadProRegular/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	}
+
+	@font-face {
+    font-family: 'MyriadProItalic';
+    src: url('../fonts/MyriadProItalic/MyriadPro-It.eot');
+    src: url('../fonts/MyriadProItalic/MyriadPro-It.eot?#iefix') format('embedded-opentype'),
+	    url('../fonts/MyriadProItalic/MyriadPro-It.woff2') format('woff2'),
+	    url('../fonts/MyriadProItalic/MyriadPro-It.woff') format('woff'),
+	    url('../fonts/MyriadProItalic/MyriadPro-It.ttf') format('truetype'),
+	    url('../fonts/MyriadProItalic/MyriadPro-It.svg#MyriadPro-It') format('svg');
+    font-weight: normal;
+    font-style: italic;
+	}
+
+	@font-face {
+    font-family: 'MyriadProBold';
+    src: url('../fonts/MyriadProBold/MyriadPro-Bold.eot');
+    src: url('../fonts/MyriadProBold/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/MyriadProBold/MyriadPro-Bold.woff2') format('woff2'),
+      url('../fonts/MyriadProBold/MyriadPro-Bold.woff') format('woff'),
+      url('../fonts/MyriadProBold/MyriadPro-Bold.ttf') format('truetype'),
+      url('../fonts/MyriadProBold/MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+	}
+
+	@font-face {
+    font-family: 'MyriadProBoldCond';
+    src: url('../fonts/MyriadProBoldCond/MyriadPro-BoldCond.eot');
+    src: url('../fonts/MyriadProBoldCond/MyriadPro-BoldCond.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/MyriadProBoldCond/MyriadPro-BoldCond.woff2') format('woff2'),
+      url('../fonts/MyriadProBoldCond/MyriadPro-BoldCond.woff') format('woff'),
+      url('../fonts/MyriadProBoldCond/MyriadPro-BoldCond.ttf') format('truetype'),
+      url('../fonts/MyriadProBoldCond/MyriadPro-BoldCond.svg#MyriadPro-BoldCond') format('svg');
+    font-weight: bold;
+    font-style: normal;
+	}
+
+
+	
+	font-display: optional;
+	// line-height: 1.42em;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	// main font
+	font-family: 'MyriadProRegular', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #000;
+
+	
+
+	// нужно добавить при появлении белой полоски при горизонтальном скролле
+	//overflow-x: hidden;
+
+	img {
+		max-width: 100%;
+		height: auto;
+		
+		// for ie 9
+		border: 0;
+	}
+	
+	ul {
+		list-style: none;
+	}
+
+	input {
+		outline: none;
+	}
+
+	a {
+		text-decoration: none;
+		outline: none;
+
+		transition: all .2s;						
+
+		&:hover {
+			opacity: .8;
+		}
+	}
+
+	button {
+		cursor: pointer;
+		outline: none;
+	}
+	
+	h1,h2,h3,h4,p,ul,input,picture {
+		margin: 0;
+		padding: 0;
+	}
+
+	.btn {
+		border-radius: 25px;
+		background: #245c26;
+		border-bottom: 3px solid #143415;
+		padding: 10px 22px;
+		border: none;
+		color: #fff;
+
+		&:hover {
+			opacity: .8;
+		}
+	}
+
+	.container {
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 5px;
+		padding-right: 5px;
+		max-width: 1170px;
+		height: 100%;
+	}
+
+	// fix scroll bug
+	// .wrapper {
+	// 	// not to body
+	// 	// min-width: 1200px; //+
+	// 	overflow: hidden;
+	// }
+
+	// for footer down
+	// .wrapper {
+	// 	position: relative;
+	// 	min-height: 100%;
+	// }
+	// .wrapper:after {
+	// 	content: "";
+	// 	display: table;
+	// 	height: 50px;
+	// }
+	// // метод footer down и вся верстка кроме footer в .wrapper
+	// footer {
+	// 	min-width: 1200px; //+
+	// 	height: 50px;
+	// 	margin-top: -50px;
+	// }
+}

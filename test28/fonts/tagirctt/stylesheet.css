@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'TagirCTT';
+    src: url('TagirCTT.eot');
+    src: url('TagirCTT.eot?#iefix') format('embedded-opentype'),
+        url('TagirCTT.woff2') format('woff2'),
+        url('TagirCTT.woff') format('woff'),
+        url('TagirCTT.ttf') format('truetype'),
+        url('TagirCTT.svg#TagirCTT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

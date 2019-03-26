@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'FiraSansCondensedBlack';
+    src: url('FiraSansCondensed-Black.eot');
+    src: url('FiraSansCondensed-Black.eot?#iefix') format('embedded-opentype'),
+        url('FiraSansCondensed-Black.woff2') format('woff2'),
+        url('FiraSansCondensed-Black.woff') format('woff'),
+        url('FiraSansCondensed-Black.ttf') format('truetype'),
+        url('FiraSansCondensed-Black.svg#FiraSansCondensed-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}

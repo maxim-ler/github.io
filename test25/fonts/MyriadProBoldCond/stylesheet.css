@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Myriad Pro Cond';
+    src: url('MyriadPro-BoldCond.eot');
+    src: url('MyriadPro-BoldCond.eot?#iefix') format('embedded-opentype'),
+        url('MyriadPro-BoldCond.woff2') format('woff2'),
+        url('MyriadPro-BoldCond.woff') format('woff'),
+        url('MyriadPro-BoldCond.ttf') format('truetype'),
+        url('MyriadPro-BoldCond.svg#MyriadPro-BoldCond') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}

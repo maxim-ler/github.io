@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ООО "АМД групп"</title>
+</head>
+<body>
+	<script>
+		window.onload = function() {
+			var status = localStorage['visited'];
+
+			if (status == 'yes') {
+				// window.location.href = "https://google.com";
+				window.location.href = "1/index.html";
+				localStorage['visited'] = 'no';
+			}
+			else {
+				// window.location.href = "https://yandex.ru";
+				//window.location.href = "2/index.html";
+				window.location.href = "1/index.html";
+				localStorage['visited'] = 'yes';
+			}
+		};
+	</script>	
+</body>
+</html>

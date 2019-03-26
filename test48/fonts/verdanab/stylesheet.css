@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Verdana';
+    src: url('Verdana-Bold.eot');
+    src: url('Verdana-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Verdana-Bold.woff2') format('woff2'),
+        url('Verdana-Bold.woff') format('woff'),
+        url('Verdana-Bold.ttf') format('truetype'),
+        url('Verdana-Bold.svg#Verdana-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

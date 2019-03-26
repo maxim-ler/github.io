@@ -1,0 +1,11 @@
+Временная почта для заявок:
+interior-design2018-temp@mail.ru
+OjxG6o-PR8lw
+
+---------------------------------------------
+
+Текущая почта заказчика:
+interior-design2018@mail.ru
+_Zr2oFQ8Mgtm
+
+P.S. она меняется в файле smart.php в папке mailer - строка 24 (см скрин)

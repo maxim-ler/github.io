@@ -1,0 +1,902 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name = "format-detection" content = "telephone=no" />
+
+		<title>Шины для экскаваторов погрузчиков. Официальный дилер MICHELIN - Оптовые поставки по всей России.</title>
+
+		<link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+		<link rel="apple-touch-icon" href="images/logo.png">
+		<link rel="apple-touch-icon-precompose" href="images/logo.png">
+		<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+		  
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/feedback.js"></script>
+
+		<script>
+			function theRotator() {
+				// Устанавливаем прозрачность всех картинок в 0
+				$('.block_new').css({opacity: 0.0});
+			 
+				// Берем первую картинку и показываем ее (по пути включаем полную видимость)
+				$('.block_new:first').css({opacity: 1.0});
+			 
+				// Вызываем функцию rotate для запуска слайдшоу, 5000 = смена картинок происходит раз в 5 секунд
+				setInterval('rotate()',5000);
+			}
+			 
+			function rotate() {	
+				// Берем первую картинку
+				var current = ($('.block_new.show')?  $('.block_new.show') : $('.block_new:first'));
+			 
+				// Берем следующую картинку, когда дойдем до последней начинаем с начала
+				var next = ((current.next().length) ? ((current.next().hasClass('show')) ? $('.block_new:first') :current.next()) : $('.block_new:first'));	
+			 
+				// Расскомментируйте, чтобы показвать картинки в случайном порядке
+				// var sibs = current.siblings();
+				// var rndNum = Math.floor(Math.random() * sibs.length );
+				// var next = $( sibs[ rndNum ] );
+			 
+				// Подключаем эффект растворения/затухания для показа картинок, css-класс show имеет больший z-index
+				next.css({opacity: 0.0})
+				.addClass('show')
+				.animate({opacity: 1.0}, 1000);
+			 
+				// Прячем текущую картинку
+				current.animate({opacity: 0.0}, 1000)
+				.removeClass('show');
+			};
+
+			$(document).ready(function(){
+
+			//theRotator();
+
+				$('.click_kp').click(function(){  
+
+					var id = $(this).attr('id').split('_')[2];
+					
+					$("#zapros5").val(id);
+
+				});
+
+				$.fn.center_pop_up = function(){
+					this.css('position','fixed');  
+					this.css('top', '0px');  
+					this.css('left', ($(window).width() - this.width()) / 2+$(window).scrollLeft() + 'px');
+				}
+
+				$('.scrol').click(function(){  
+				var id = $(this).attr('id').split('_')[1]; 
+				$('html, body').stop().animate({
+				scrollTop: $('#'+id).offset().top
+				}, 1000);
+				return false;}); 
+
+				$('.men').click(function(){  
+					var id = $(this).attr('id').split('_')[1]; 
+								
+					$("div").removeClass("linki");  
+					$("span").removeClass("linki2");  
+					$("div#lim_"+id).addClass("linki"); 
+					$("span#sp_"+id).addClass("linki2");
+					$(".block_new").hide(); 
+					$("#block10_new_"+id).fadeIn(300);  
+
+					return false;   
+				});		
+			});
+			 
+			function open_pop_up(box) {
+			// 	window.OTActivePopup = box;
+				$("#overlay").fadeIn(300);
+				$(box).center_pop_up();
+				$(box).delay(350).fadeIn(50).animate({top: "220px"},100).animate({top: "100px"},'fast');
+			}
+			 
+			function close_pop_up(box) {
+				$(box).animate({top: "1000px"},300).fadeOut(50);
+				$("#overlay").delay(50).fadeOut(300);
+			}
+
+			function getScrollTop() {
+					   var scrOfY = 0;
+					   if( typeof( window.pageYOffset ) == "number" ) {
+							   //Netscape compliant
+							   scrOfY = window.pageYOffset;
+					   } else if( document.body
+					   && ( document.body.scrollLeft
+					   || document.body.scrollTop ) ) {
+							   //DOM compliant
+							   scrOfY = document.body.scrollTop;
+					   } else if( document.documentElement
+					   && ( document.documentElement.scrollLeft
+						|| document.documentElement.scrollTop ) ) {
+							   //IE6 Strict
+							   scrOfY = document.documentElement.scrollTop;
+					   }
+					   return scrOfY;
+			}
+				
+			jQuery(window).scroll(function() {
+				fixPaneRefresh();
+			});
+				
+			function fixPaneRefresh(){
+				if (jQuery("#top-up").length) {
+					var top  = getScrollTop();
+					if (top > 1220) jQuery("#top-up").fadeIn(500);
+					else jQuery("#top-up").fadeOut(500);
+					
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<!-- section 1 - ШИНЫ ДЛЯ ЭКСКАВАТОРОВ-ПОГРУЗЧИКОВ -->
+		<a id="1000">
+		<div id="top">
+			<div class="logo_text">Шины для экскаваторов-погрузчиков</div>
+			<div class="logo2">JCB<div class="logo3"></div></div>
+			<div class="phone_text"><span class="phone"><a href="tel:880055517-62">8(800) 555-17-62</a></span><span class="phone_t">Бесплатный звонок с любых телефонов России</span></div>
+		</div>
+		<div class="clearfix"></div>
+
+
+
+		<!-- section2 - Шины оптом и в розницу от официального дилера MICHLEN -->
+		<div id="block1">
+			<div class="block1_text">Шины оптом и в розницу <br />от официального дилера MICHLEN</div>
+			<div class="block1_text2">Оставьте заявку и мы сориентируем Вас по наличию и доставке<br />нужной модели шин в течение 15 минут</div>
+			<div class="block1_form" id="form_view2">
+				<center>
+					<!-- первая форма -->
+					<form action="#" method="POST" id="form_1" class="callback__form">
+						<input type="text" id="name3" name="name" class="input_form firstname" value placeholder="Ваше Имя">
+						<input type="text" id="number3" name="phone" class="input_form number" value placeholder="Телефон (обязательно)">
+						<div class="error_message"></div>
+						<input type="submit" id="button3" name="send" class="feedback form_button button__callback" value="Подобрать шины" onclick="event.preventDefault()">
+					</form>
+				</center>
+			</div>
+		</div>
+
+
+
+		<!-- section3 - Вся линейка шин для эскаваторов-погрузчиков -->
+		<div id="block8" style="min-height:1600px;">
+		<a id="102">
+		<div class="block8_text">Вся линейка шин <br />для эскаваторов-погрузчиков</div></a>
+		<div class="block7_text2">POWER CL, XMCL, BIBSTEEL H/S, BIBSTEEL A/T, BIBLOAD, XZSL, XF</div>
+		<hr class="block7">
+
+		<div class="block8_size" style="min-height:1040px;margin-top:200px;">
+
+		<table style="padding-top:15px;"><tr><td style="width:250px;"><h4>Размер шины</h4></td><td style="width:250px;"><h4>Название шины</h4></td><td style="width:100px;text-align:right;"><h4>Цена, руб.</h4></td></tr></table>
+		<h5>POWER CL MICHELIN</h5>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">340/80-18 (12.5-18)</span></td><td style="width:200px;"><span class="one">POWER CL MICHELIN</span></td><td style="width:150px;text-align:right;"><span class="two">25146.00</span></td></tr></table>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">400/70-20 (14.5-20)</span></td><td style="width:200px;"><span class="one">POWER CL MICHELIN</span></td><td style="width:150px;text-align:right;"><span class="two">33838.00</span></td></tr></table>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">440/80-24 (16.9-24)</span></td><td style="width:200px;"><span class="one">POWER CL MICHELIN</span></td><td style="width:150px;text-align:right;"><span class="two">46094.00</span></td></tr></table>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">480/80-26 (18.4-26)</span></td><td style="width:200px;"><span class="one">POWER CL MICHELIN</span></td><td style="width:150px;text-align:right;"><span class="two">49385.00</span></td></tr></table>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">440/80-28 (16.9-28)</span></td><td style="width:200px;"><span class="one">POWER CL MICHELIN</span></td><td style="width:150px;text-align:right;"><span class="two">45436.00</span></td></tr></table>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">420/80-30 (16.9-30)</span></td><td style="width:200px;"><span class="one">POWER CL MICHELIN</span></td><td style="width:150px;text-align:right;"><span class="two">50305.00</span></td></tr></table>
+
+
+
+		<h5>MICHELIN POWER DIGGER</h5>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">10.00 - 20 165А2/147В ТТ Эквив. 16PR</span></td><td style="width:200px;"><span class="one">MICHELIN POWER DIGGER</span></td><td style="width:150px;text-align:right;"><span class="two">19700.00</span></td></tr></table>
+
+
+
+		<h5>XMCL MICHELIN</h5>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">340/80R18 (12.5R18)</span></td><td style="width:250px;"><span class="one">XMCL MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">32894.00</span></td></tr></table>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">400/70R20 (14.5R20)</span></td><td style="width:250px;"><span class="one">XMCL MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">41189.00</span></td></tr></table> 
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">440/80R24 (16.9R24)</span></td><td style="width:250px;"><span class="one">XMCL MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">62164.00</span></td></tr></table>
+
+		<!--новые-->
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">480/80R26 (18.4R26)</span></td><td style="width:250px;"><span class="one">XMCL MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">64696.00</span></td></tr></table>
+		<table class="dark"><tr><td style="width:250px;"><span class="one">440/80R28 (16.9R28)</span></td><td style="width:250px;"><span class="one">XMCL MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">62598.00</span></td></tr></table>
+
+
+
+		<h5>BIBLOAD H/SURFACE MICHELIN</h5>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">340/80R18 (12.5R18)</span></td><td style="width:250px;"><span class="one">BIBLOAD H/SURFACE MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">32894.00</span></td></tr></table>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">400/70R20 (14.5R20)</span></td><td style="width:250px;"><span class="one">BIBLOAD H/SURFACE MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">41189.00</span></td></tr></table>
+
+		<!--новые-->
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">440/80R24 (16.9R24)</span></td><td style="width:250px;"><span class="one">BIBLOAD H/SURFACE MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">62164.00</span></td></tr></table>
+		<table class="dark"><tr><td style="width:250px;"><span class="one">480/80R26 (18.4R26)</span></td><td style="width:250px;"><span class="one">BIBLOAD H/SURFACE MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">64696.00</span></td></tr></table>
+		<table class="dark"><tr><td style="width:250px;"><span class="one">440/80R28 (16.9R28)</span></td><td style="width:250px;"><span class="one">BIBLOAD H/SURFACE MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">62598.00</span></td></tr></table>
+
+
+
+		<h5>BIBSTEEL H/SURFACE MICHELIN</h5>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">260/70R16.5 (10R16.5)</span></td><td style="width:250px;"><span class="one">BIBSTEEL H/SURFACE MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">22091.00</span></td></tr></table>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">300/70R16.5 (12R16.5)</span></td><td style="width:250px;"><span class="one">BIBSTEEL H/SURFACE MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">30374.00</span></td></tr></table>
+
+
+
+		<h5>BIBSTEEL A/TERRAIN MICHELIN</h5>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">260/70R16.5 (10R16.5)</span></td><td style="width:250px;"><span class="one">BIBSTEEL A/TERRAIN MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">20452.00</span></td></tr></table>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">300/70R16.5 (12R16.5)</span></td><td style="width:250px;"><span class="one">BIBSTEEL A/TERRAIN MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">27368.00</span></td></tr></table>
+
+		<table style="border-bottom:0px;margin-top:20px;"><tr><td style="width:250px;"><a href="#" id="scro4_99" class="scrol">В чем отличия шин?</a></td><td style="width:350px; font-size:13px;"> * При покупке комплекта шин скидка до 10% или<br />доставка до вашего города от двух шин в подарок!</td></tr></table>
+
+		<div class="block15"></div>
+
+		<div class="block8_komm"><i>Хотите скидку по акции до 10%?</i>
+		<a href="#" onclick="open_pop_up('#pop-up'); return false;">Получить скидку!</a>
+		</div>
+
+		<div class="block8_komm2"><i>Хотите скидку по акции до 10%?</i>
+		<a href="#" onclick="open_pop_up('#pop-up'); return false;">Получить скидку!</a>
+		</div>
+
+		<div class="block8_tech3"></div>
+		<div class="block8_tech4"></div>
+
+		</div>
+
+		<center><input class="form_button" type="submit" value="Получить скидку до 10%" onclick="open_pop_up('#pop-up'); return false;"></center>
+		</div>
+
+
+
+		<!-- section4 - Какие шины подойдут для вашей техники -->
+		<div class="clearfix"></div>
+		<a id="2000">
+		<div id="block2">
+		<div class="block2_text">Какие шины подойдут для вашей техники</div>
+		<div class="block2_text2">Выберите модель вашей техники:</div>
+		<div class="block2_select">
+			<a href="#" id="scroll_1" class="scrol">
+			<div class="block2_select_one">
+			<div class="p1"></div>
+			<div class="one">Шины для</div>
+			<div class="two"><a href="#" id="scrol_1" class="scrol">JCB 3CX</a></div>
+			</div>
+			</a>
+
+			<a href="#" id="scroll_2" class="scrol">
+			<div class="block2_select_one">
+			<div class="p2"></div>
+			<div class="one">Шины для</div>
+			<div class="two"><a href="#" id="scrol_2" class="scrol">JCB 3CX SUPER</a></div>
+			</div>
+			</a>
+
+			<a href="#" id="scroll_3" class="scrol">
+			<div class="block2_select_one">
+			<div class="p3"></div>
+			<div class="one">Шины для</div>
+			<div class="two"><a href="#" id="scrol_3" class="scrol">JCB 4CX</a></div>
+			</div>
+			</a>
+
+			<a href="#" id="scroll_4" class="scrol">
+			<div class="block2_select_one">
+			<div class="p4"></div>
+			<div class="one">Шины для</div>
+			<div class="two"><a href="#" id="scrol_4" class="scrol">JCB 5CX</a></div>
+			</div>
+			</a>
+
+			<a href="#" id="scroll_5" class="scrol">
+			<div class="block2_select_one">
+			<div class="p5"></div>
+			<div class="one">Шины для</div>
+			<div class="three"><a href="#" id="scrol_5" class="scrol">Минипогрузчиков с бортовым поворотом</a></div>
+			</div>
+			</a>
+		</div>
+
+		<div class="block2_click"><a href="#" id="scrol_100" class="scrol">Не нашли свою технику?</a></div>
+
+		</div>
+
+		<div class="clearfix"></div>
+
+
+
+		<!-- section5 - Почему выбирают нашу компанию -->
+		<div id="block3">
+		<div class="block3_text">Почему выбирают нашу компанию</div>
+		<div class=block3_big>
+		<div class=block3_small>
+		<span class="small_1">Мы поможем квалифицированно подобрать оптимальные шины для Вашей спецтехники JCB согласно Вашим условиям эксплуатации</span>
+		<span class="small_2">Приведем стоимость расчёта моточаса работы шины, однозначно демонстрирующий выгоду эксплуатации шин премиального сегмента по сравнению с бюджетными аналогами</span>
+		<span class="small_3">Бесплатно рассчитаем доставку по выгодной цене несколькими надежными логистическими фирмами</span>
+		</div>
+		<div class=block3_small>
+		<span class="small_4">Дадим рекомендации в покупке шин радиальной или диагональной конструкции. Объясним преимущества тех или других</span>
+		<span class="small_5">Подберем качественные шины премимум-бренда с отличным сроком ходимости</span>
+		<span class="small_6">В течении 24 часов после подписания договора и оплаты, шины будут отправлены в Ваш регион.
+		<div class="quarantee"></div></span>
+		</div>
+		</div>
+		</div>
+
+		<div id="block3_down"></div>
+
+		<div class="clearfix"></div>
+		
+
+
+		<!-- section6 - Бесплатная доставка по всей России -->
+		<div id="block4">
+		<div class="block4_text">Бесплатная доставка по всей России</div>
+		<div class=block4_big>
+			<div class=block4_one>
+				<p>Бесплатная доставка по всей России до Вашего города от двух шин и более!</p>
+				<p>Со момента оплаты ваши шины выходят с нашего склада в течении 24-х часов!</p>
+
+				<center><input class="form_button" type="submit" value="Заказать доставку!" onclick="open_pop_up('#pop-up2'); return false;"></center>
+			</div>
+			<div class=block4_two></div>
+		</div>
+		</div>
+
+		<div class="clearfix"></div>
+
+
+
+		<!-- section7 - Почему именно шины Мишлен рекомендуются для JCB -->
+		<div id="block5">
+		<div class="block4_text">Почему именно шины Мишлен<br />рекомендуются для JCB</div>
+		<div class=block5_one>
+		<span class="num_1">Производитель  техники JCB выбрал диагональную шину  Michelin Power  CL и радиальную  шину XMCL как стандартные  шины  для  моделей  своей  техники. Эти шины идут в первичной комплектации на погрузчиках JCB.</span>
+		<span class="num_2">Стоимость мото/часа шин Michelin POWER CL и шин Michelin  XMCL, которая рассчитывается по результату ходимости шины, дешевле  чем у «бюджетных» шин  других производителей</span>
+		<span class="num_3">Шины Michelin POWER CL и шины Michelin XMCL - лидеры продаж в линейке индустриальных шин (линия Compact Line) Michelin. Им доверяют как крупные предприятия, так и предприятия малого и частного бизнеса</span>
+		</div>
+
+		</div>
+
+		<div class="clearfix"></div>
+
+
+
+		<!-- section8 - Различие между диагональной и радиальной конструкцией шин -->
+		<div id="block6"><a id="99">
+		<div class="block6_text">Различие между диагональной<br />и радиальной конструкцией шин</div>
+		<div class="block6_big">
+		<div class="block6_1">
+		<h2>Диагональная шина</h2>
+		<h4>POWER CL MICHELIN (-)</h4>
+
+		<p>Каркас шины состоит из одной или нескольких пар слоев корда; нити соседних слоев, перекрещиваясь, расположены по диагонали от одного борта к другому. Брекерный слой диагональной шины не стабилизирован, при качении деформация боковины передается протектору из-за их однотипного строения, что неизбежно приводит к усилению трения в уменьшенном пятне контакта. За счет этого износ шины увеличивается пропорционально расходу топлива. Эти недостатки компенсируют невысокая цена, достаточно прочная боковина и относительно недорогой ремонт.</p>
+		<h3>Преимущества</h3>
+		<p><li><span>высокая стойкость боковины к порезам;</span></li>
+		<li><span>низкая по отношению к радиальной шине цена;</span></li>
+		<li><span>большая способность переносить кратковременные перегрузки;</span></li>
+		<li><span>способность к утилизации.</span></li></p>
+		</div>
+		<div class="block6_2"></div>
+		<div class="block6_3">
+		<h2>Радиальная шина</h2>
+		<h4>XMCL MICHELIN (R)</h4>
+
+		<p>В радиальной шине корд каркаса натянут от одного борта к другому без перехлеста нитей; тонкая мягкая оболочка каркаса по наружной поверхности обтянута мощным гибким брекером - поясом из высокопрочного нерастяжимого корда, стального или текстильного. Эксплуатация радиальных шин более безопасна за счет повышенного сцепления с дорожным покрытием, риск повреждений, сведен к минимуму. Высокая цена шин окупается благодаря их работоспособности, максимальной тяге, защите от проколов и перегрева, экономии топлива, увеличенному сроку службы. </p>
+		<h3>Преимущества</h3>
+		<p><li><span>стойкость к перегреву, что дает возможность работать на длинных дистанциях и выдерживать длительные перегрузки;</span></li>
+		<li><span>большее пятно контакта, что улучшает сцепление и уменьшает давление на почву;</span></li>
+		<li><span>стойкость к «поворотным» перегрузкам (при вращении колес управляющей оси стоя на месте);</span></li>
+		<li><span>низкое сопротивление качению, повышенная комфортность.</span></li></p>
+		</div>
+		</div>
+		</div>
+
+		<div class="clearfix"></div>
+
+
+
+		<!-- section9 - Шины для JCB 3CX -->
+		<div id="block7_up"></div>
+		<div id="block7">
+		<a id="1">
+		<div class="block7_text">Шины для JCB 3CX</div></a>
+		<div class="block7_text2">Экскаватор-погрузчик JCB 3CX.<br />Мы предлагаем лучший вариант шин<br />для вашей техники!</div>
+		<hr class="block7">
+
+		<div class="block7_size">
+
+		<table><tr><td style="width:250px;"><h4>Размер шины</h4></td><td style="width:250px;"><h4>Название шины</h4></td><td style="width:100px;text-align:right;"><h4>Цена, руб.</h4></td></tr></table>
+		<h5>JCB 3CX (передняя ось)</h5>
+
+
+		<table class="light"><tr><td style="width:250px;"><span class="one">340/80-18 (12.5-18)</span></td><td style="width:200px;"><span class="one">POWER CL MICHELIN</span></td><td style="width:150px;text-align:right;"><span class="two">25146.00</span></td></tr></table>
+
+
+		<table class="light"><tr><td style="width:250px;"><span class="one">340/80R18 (12.5R18)</span></td><td style="width:250px;"><span class="one">XMCL MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">32894.00</span></td></tr></table>
+
+		<h5>JCB 3CX (задняя ось)</h5>
+
+
+		<table class="light"><tr><td style="width:250px;"><span class="one">440/80-28 (16.9-28)</span></td><td style="width:200px;"><span class="one">POWER CL MICHELIN</span></td><td style="width:150px;text-align:right;"><span class="two">45436.00</span></td></tr></table>
+
+
+
+		<table class="light"><tr><td style="width:250px;"><span class="one">440/80R28 (16.9R28)</span></td><td style="width:250px;"><span class="one">XMCL MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">62598.00</span></td></tr></table>
+
+		<table style="border-bottom:0px;margin-top:20px;"><tr><td style="width:250px;"><a href="#" id="scrol1_99" class="scrol">В чем отличия шин?</a></td><td style="width:350px; font-size:13px;"> * При покупке комплекта шин скидка до 10% или<br />доставка до вашего города от двух шин в подарок!</td></tr></table>
+
+
+		<div class="block7_tech"></div>
+		<div class="block7_komm"><i>Скачать коммерческое предложение по шинам для вашей техники</i>
+		<p class="click_kp" id="kp_11_JCB3CX" onclick="open_pop_up('#pop-up3'); return false;"><img src="./images/comm_p.jpg" style="width:80px;box-shadow: 0 5px 20px -5px rgba(0,0,0,0.5);"/></p>
+		<p class="click_kp" id="kp_12_JCB3CX" onclick="open_pop_up('#pop-up3'); return false;"><img src="./images/comm_x.jpg" style="width:80px;box-shadow: 0 5px 20px -5px rgba(0,0,0,0.5);"/></p>
+		<a href="#" id="scrol1_98" class="scrol">Посмотреть бюджетный аналог</a>
+		</div>
+
+		</div>
+
+		<center><input class="form_button" type="submit" value="Получить скидку до 10%" onclick="open_pop_up('#pop-up'); return false;"></center>
+
+		</div>
+
+		<div class="clearfix"></div>
+
+
+
+		<!-- section10 - Шины для JCB 3CX Super -->
+		<div id="block8">
+		<a id="2">
+		<div class="block8_text">Шины для JCB 3CX Super</div></a>
+		<div class="block7_text2">Экскаватор-погрузчик JCB 3CX Super.<br />Мы предлагаем лучший вариант шин<br />для вашей техники!</div>
+		<hr class="block7">
+
+		<div class="block8_size">
+
+		<table><tr><td style="width:250px;"><h4>Размер шины</h4></td><td style="width:250px;"><h4>Название шины</h4></td><td style="width:100px;text-align:right;"><h4>Цена, руб.</h4></td></tr></table>
+		<h5>JCB 3CX Super (передняя ось)</h5>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">440/80-24 (16.9-24)</span></td><td style="width:200px;"><span class="one">POWER CL MICHELIN</span></td><td style="width:150px;text-align:right;"><span class="two">46094.00</span></td></tr></table>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">440/80R24 (16.9R24)</span></td><td style="width:250px;"><span class="one">XMCL MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">62164.00</span></td></tr></table>
+
+
+		<h5>JCB 3CX Super (задняя ось)</h5>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">440/80-24 (16.9-24)</span></td><td style="width:200px;"><span class="one">POWER CL MICHELIN</span></td><td style="width:150px;text-align:right;"><span class="two">46094.00</span></td></tr></table>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">440/80R24 (16.9R24)</span></td><td style="width:250px;"><span class="one">XMCL MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">62164.00</span></td></tr></table>
+
+		<table style="border-bottom:0px;margin-top:20px;"><tr><td style="width:250px;"><a href="#" id="scrol2_99" class="scrol">В чем отличия шин?</a></td><td style="width:350px; font-size:13px;"> * При покупке комплекта шин скидка до 10% или<br />доставка до вашего города от двух шин в подарок!</td></tr></table>
+
+		<div class="block8_tech"></div>
+		<div class="block7_komm"><i>Скачать коммерческое предложение по шинам для вашей техники</i>
+		<p class="click_kp" id="kp_21_JCB3CXSUPER" onclick="open_pop_up('#pop-up3'); return false;"><img src="./images/comm_p.jpg" style="width:80px;box-shadow: 0 5px 20px -5px rgba(0,0,0,0.5);"/></p>
+		<p class="click_kp" id="kp_22_JCB3CXSUPER" onclick="open_pop_up('#pop-up3'); return false;"><img src="./images/comm_x.jpg" style="width:80px;box-shadow: 0 5px 20px -5px rgba(0,0,0,0.5);"/></p>
+		<a href="#" id="scrol2_98" class="scrol">Посмотреть бюджетный аналог</a>
+		</div>
+
+		</div>
+
+		<center><input class="form_button" type="submit" value="Получить скидку до 10%" onclick="open_pop_up('#pop-up'); return false;"></center>
+		</div>
+
+		<div class="clearfix"></div>
+
+		<div id="block7_up"></div>
+		<div id="block7" style="min-height:650px;">
+		<a id="3">
+
+
+
+		<!-- section11 - Шины для JCB 4CX -->
+		<div class="block7_text">Шины для JCB 4CX</div></a>
+		<div class="block7_text2">Экскаватор-погрузчик JCB 4CX.<br />Мы предлагаем лучший вариант шин<br />для вашей техники!</div>
+		<hr class="block7">
+
+		<div class="block7_size" style="min-height:320px;">
+
+		<table><tr><td style="width:250px;"><h4>Размер шины</h4></td><td style="width:250px;"><h4>Название шины</h4></td><td style="width:100px;text-align:right;"><h4>Цена, руб.</h4></td></tr></table>
+		<h5>JCB 4CX (передняя ось)</h5>
+
+		<table class="light"><tr><td style="width:250px;"><span class="one">440/80-28 (16.9-28)</span></td><td style="width:200px;"><span class="one">POWER CL MICHELIN</span></td><td style="width:150px;text-align:right;"><span class="two">45436.00</span></td></tr></table>
+
+		<table class="light"><tr><td style="width:250px;"><span class="one">440/80R28 (16.9R28)</span></td><td style="width:250px;"><span class="one">XMCL MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">62598.00</span></td></tr></table>
+
+		<h5>JCB 4CX (задняя ось)</h5>
+
+		<table class="light"><tr><td style="width:250px;"><span class="one">440/80-28 (16.9-28)</span></td><td style="width:200px;"><span class="one">POWER CL MICHELIN</span></td><td style="width:150px;text-align:right;"><span class="two">45436.00</span></td></tr></table>
+
+		<table class="light"><tr><td style="width:250px;"><span class="one">440/80R28 (16.9R28)</span></td><td style="width:250px;"><span class="one">XMCL MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">62598.00</span></td></tr></table>
+
+		<table style="border-bottom:0px;margin-top:20px;"><tr><td style="width:250px;"><a href="#" id="scro3_99" class="scrol">В чем отличия шин?</a></td><td style="width:350px; font-size:13px;"> * При покупке комплекта шин скидка до 10% или<br />доставка до вашего города от двух шин в подарок!</td></tr></table>
+
+
+		<div class="block7_tech2"></div>
+		<div class="block7_komm"><i>Скачать коммерческое предложение по шинам для вашей техники</i>
+		<p class="click_kp" id="kp_31_JCB4CX" onclick="open_pop_up('#pop-up3'); return false;"><img src="./images/comm_p.jpg" style="width:80px;box-shadow: 0 5px 20px -5px rgba(0,0,0,0.5);"/></p>
+		<p class="click_kp" id="kp_32_JCB4CX" onclick="open_pop_up('#pop-up3'); return false;"><img src="./images/comm_x.jpg" style="width:80px;box-shadow: 0 5px 20px -5px rgba(0,0,0,0.5);"/></p>
+		<a href="#" id="scrol3_98" class="scrol">Посмотреть бюджетный аналог</a>
+		</div>
+
+		</div>
+
+		<center><input class="form_button" type="submit" value="Получить скидку 3000 руб." onclick="open_pop_up('#pop-up'); return false;"></center>
+		</div>
+
+		<div class="clearfix"></div>
+
+		<div id="block8" style="height:650px;">
+		<a id="4">
+
+
+
+		<!-- section12 - Шины для JCB 5CX -->
+		<div class="block8_text">Шины для JCB 5CX</div></a>
+		<div class="block7_text2">Экскаватор-погрузчик JCB 5CX.<br />Мы предлагаем лучший вариант шин<br />для вашей техники!</div>
+		<hr class="block7">
+
+		<div class="block8_size" style="min-height:320px;">
+
+		<table><tr><td style="width:250px;"><h4>Размер шины</h4></td><td style="width:250px;"><h4>Название шины</h4></td><td style="width:100px;text-align:right;"><h4>Цена, руб.</h4></td></tr></table>
+		<h5>JCB 5CX (передняя ось)</h5>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">440/80-28 (16.9-28)</span></td><td style="width:200px;"><span class="one">POWER CL MICHELIN</span></td><td style="width:150px;text-align:right;"><span class="two">45436.00</span></td></tr></table>
+
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">440/80R28 (16.9R28)</span></td><td style="width:250px;"><span class="one">XMCL MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">62598.00</span></td></tr></table>
+
+		<h5>JCB 5CX (задняя ось)</h5>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">440/80-28 (16.9-28)</span></td><td style="width:200px;"><span class="one">POWER CL MICHELIN</span></td><td style="width:150px;text-align:right;"><span class="two">45436.00</span></td></tr></table>
+
+		<table class="dark"><tr><td style="width:250px;"><span class="one">440/80R28 (16.9R28)</span></td><td style="width:250px;"><span class="one">XMCL MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">62598.00</span></td></tr></table>
+
+		<table style="border-bottom:0px;margin-top:20px;"><tr><td style="width:250px;"><a href="#" id="scro4_99" class="scrol">В чем отличия шин?</a></td><td style="width:350px; font-size:13px;"> * При покупке комплекта шин скидка до 10% или<br />доставка до вашего города от двух шин в подарок!</td></tr></table>
+
+		<div class="block8_tech2"></div>
+		<div class="block7_komm"><i>Скачать коммерческое предложение по шинам для вашей техники</i>
+		<p onclick="open_pop_up('#pop-up3'); return false;"><img class="click_kp" id="kp_42_JCB5CX" src="./images/comm_p.jpg" style="width:80px;box-shadow: 0 5px 20px -5px rgba(0,0,0,0.5);"/></p>
+		<p onclick="open_pop_up('#pop-up3'); return false;"><img class="click_kp" id="kp_42_JCB5CX" src="./images/comm_x.jpg" style="width:80px;box-shadow: 0 5px 20px -5px rgba(0,0,0,0.5);"/></p>
+		<a href="#" id="scrol4_98" class="scrol">Посмотреть бюджетный аналог</a>
+		</div>
+
+		</div>
+
+		<center><input class="form_button" type="submit" value="Получить скидку до 10%" onclick="open_pop_up('#pop-up'); return false;"></center>
+		</div>
+
+		<div class="clearfix"></div>
+
+		<div id="block7_up"></div>
+		<div id="block7_3">
+		<a id="5">
+
+
+
+		<!-- section13 - Шины для минипогрузчиков с бортовым поворотом -->
+		<div class="block7_text">Шины для минипогрузчиков<br />с бортовым поворотом</div></a>
+		<div class="block7_text2">Минипогрузчикки с бортовым поворотом<br />серии 135,155,175,190,205 и 225,260,280,300,330<br />Мы предлагаем лучший вариант шин<br />для вашей техники!</div>
+		<hr class="block7">
+
+		<div class="block7_size">
+
+		<table><tr><td style="width:250px;"><h4>Размер шины</h4></td><td style="width:250px;"><h4>Название шины</h4></td><td style="width:100px;text-align:right;"><h4>Цена, руб.</h4></td></tr></table>
+		<h5>Модели серии 135,155,175,190,205</h5>
+
+
+		<table class="light"><tr><td style="width:250px;"><span class="one">260/70R16.5 (10R16.5)</span></td><td style="width:250px;"><span class="one">BIBSTEEL A/T</span></td><td style="width:100px;text-align:right;"><span class="two">20452.00</span></td></tr></table>
+
+
+		<table class="light"><tr><td style="width:250px;"><span class="one">260/70R16.5 (10R16.5)</span></td><td style="width:250px;"><span class="one">BIBSTEEL H/S</span></td><td style="width:100px;text-align:right;"><span class="two">22091.00</span></td></tr></table>
+
+		<h5>Модели серии 225,260,280,300,330</h5>
+
+
+		<table class="light"><tr><td style="width:250px;"><span class="one">300/70R16.5 (12R16.5)</span></td><td style="width:250px;"><span class="one">BIBSTEEL A/T</span></td><td style="width:100px;text-align:right;"><span class="two">27368.00</span></td></tr></table>
+
+
+		<table class="light"><tr><td style="width:250px;"><span class="one">300/70R16.5 (12R16.5)</span></td><td style="width:250px;"><span class="one">BIBSTEEL H/S</span></td><td style="width:100px;text-align:right;"><span class="two">30374.00</span></td></tr></table>
+
+		<table style="margin-top:20px;"><tr><td style="width:50px;font-size:12px;"><b>BIBSTEEL A/T<br />BIBSTEEL H/S</b></td><td style="width:350px; font-size:13px;">- рыхлые, сыпучие грунты<br />- жесткие, абразивные поверхности</td></tr></table>
+
+		<p style="max-width:600px; font-size:13px; text-align:center;"> * При покупке комплекта шин скидки до 10% или доставка до вашего<br />города от двух шин в подарок!</p>
+
+		<div class="block7_tech3"></div>
+		<div class="block7_komm"><i>Скачать коммерческое предложение по шинам для вашей техники</i>
+		<p class="click_kp" id="kp_51_JCB135-330" onclick="open_pop_up('#pop-up3');return false;"><img src="./images/comm_p.jpg" style="width:80px;box-shadow: 0 5px 20px -5px rgba(0,0,0,0.5);"/></p>
+		<p class="click_kp" id="kp_52_JCB135-330" onclick="open_pop_up('#pop-up3');return false;"><img src="./images/comm_x.jpg" style="width:80px;box-shadow: 0 5px 20px -5px rgba(0,0,0,0.5);"/></p>
+		<a href="#" id="scrol5_98" class="scrol">Посмотреть бюджетный аналог</a>
+		</div>
+
+		</div>
+
+		<center><input class="form_button" type="submit" value="Получить скидку 3000 руб." onclick="open_pop_up('#pop-up'); return false;"></center>
+		</div>
+
+		<div class="clearfix"></div>
+
+		<div class="clearfix"></div>
+		
+
+
+		<!-- section14 - Ремонт шин Продажа шин Б/У -->
+		<div id="block9_2"><a id="98">
+		<div class="block9_text">Ремонт шин</div>
+		<div class="block9_text">Продажа шин Б/У</div>
+
+		<div class="block9_size">
+
+		<table><tr><td style="width:500px;"><h4>Вид услуги</h4></td><td style="width:100px;text-align:right;"><h4>Цена, руб.</h4></td></tr></table>
+
+		<h5>Ремонт шин</h5>
+
+		<table class="light"><tr><td style="width:500px;"><span class="one">340/80-18 (12.5-18)</span></td><td style="width:100px;text-align:right;"><span class="two">6000.00</span></td></tr></table>
+		<table class="light"><tr><td style="width:500px;"><span class="one">400/70-20 (14.5-20)</span></td><td style="width:100px;text-align:right;"><span class="two">6000.00</span></td></tr></table>
+		<table class="light"><tr><td style="width:500px;"><span class="one">480/80-26 (18.4-26)</span></td><td style="width:100px;text-align:right;"><span class="two">6000.00</span></td></tr></table>
+		<table class="light"><tr><td style="width:500px;"><span class="one">440/80-24 (16.9-24)</span></td><td style="width:100px;text-align:right;"><span class="two">6000.00</span></td></tr></table>
+		<table class="light"><tr><td style="width:500px;"><span class="one">440/80-28 (16.9-28)</span></td><td style="width:100px;text-align:right;"><span class="two">6000.00</span></td></tr></table>
+		<table class="light"><tr><td style="width:500px;"><span class="one">440/80-30 (16.9-30)</span></td><td style="width:100px;text-align:right;"><span class="two">6000.00</span></td></tr></table>
+
+		<h5>Продажа шин Б/У</h5>
+
+		<table class="light"><tr><td style="width:500px;"><span class="one">POWER CL MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">Индивидуально</span></td></tr></table>
+		<table class="light"><tr><td style="width:500px;"><span class="one">XMCL MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">Индивидуально</span></td></tr></table>
+		<table class="light"><tr><td style="width:500px;"><span class="one">BIBLOAD H/SURFACE MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">Индивидуально</span></td></tr></table>
+		<table class="light"><tr><td style="width:500px;"><span class="one">BIBSTEEL H/SURFACE MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">Индивидуально</span></td></tr></table>
+		<table class="light"><tr><td style="width:500px;"><span class="one">BIBSTEEL A/TERRAIN MICHELIN</span></td><td style="width:100px;text-align:right;"><span class="two">Индивидуально</span></td></tr></table>
+
+		<div class="block9_tyre"></div>
+		</div>
+
+		<center><input class="form_button" type="submit" value="Получить скидку 2000 руб." onclick="open_pop_up('#pop-up'); return false;"></center>
+		</div>
+
+		<div class="clearfix"></div>
+
+		<div id="block9_3">
+		</div>
+
+		<div class="clearfix"></div>
+
+
+		
+		<!-- section15 - НОВИНКИ -->
+		<div id="block10">
+		<div class="block10_text">
+		<div class="block10_text1" style="padding-top:5px;">НОВИНКИ</div>
+		<div class="block10_text2" style="display:none;" id="lim_0"><span id="sp_0"><a id="men_0" class="men" href="#"></a></span></div>
+		<div class="block10_text2 linki" id="lim_1"><span class="linki2" id="sp_1"><a id="men_1" class="men" href="#">BIBLOAD</a></span></div>
+		<div class="block10_text2" id="lim_4"><span id="sp_4"><a id="men_4" class="men" href="#">XMCL</a></span></div>
+		</div>
+
+		<div id="block10_new_1" class="block_new" style="position:relative;">
+		<div class="block_new_1p" style="float:left;"> </div>
+		<div class="block_new_2p">
+		<span class="newest1">Новые шины</span>
+		<span class="title_new1">Michelin BIBLOAD HARD SURFACE</span>
+		<span class="content_new1">Для телескопических погрузчиков, экскаваторов-погрузчиков, работающие более 50% времени на жестких поверхностях (городская эксплуатация)</span>
+		</div>
+		</div>
+
+		<div id="block10_new_2" class="block_new" style="display:none;">
+		<div class="block_new_2p" style="float:right;"> </div>
+		<div style="width:500px;float:right; padding-top:10px;">
+		<span class="newest2">Новые типоразмеры</span>
+		<span class="title_new2">Michelin POWER CL 460/70-24 159A8/B</span>
+		<span class="content_new2">Для телескопических погрузчиков, работающие в условии высокой агрессии, телескопические погрузчики с вылетом стрелы более 10 метров</span>
+		</div>
+		</div>
+
+		<div id="block10_new_3" class="block_new" style="display:none;">
+		<div style="width:460px;float:left; padding:10px;">
+		<span class="newest2">Индекс скорости</span>
+		<span class="title_new3">Michelin BIBSTEEL ALL TERRAIN</span>
+		<span class="content_new3">На всех типоразмерах будет увеличен индекс скорости с A5 до A8/B для возможности использования на экскаваторах-погрузчиках и телескопических погрузичках</span>
+		</div>
+		<div style="width:460px;float:left; padding:10px;">
+		<span class="newest2">Новый типоразмер</span>
+		<span class="title_new3">Michelin POWER CL 500/70-24 164A8/B</span>
+		<span class="content_new3">Для телескопических погрузчиков, работающих в условиях высокой агрессии, телескопические погрузчики с вылетом стрелы более 10 метров</span>
+		</div>
+		</div>
+
+		<div id="block10_new_4" class="block_new" style="display:none;position:relative;">
+		<div class="new4_1"> </div>
+		<div class="new4_2"> </div>
+		<div></div>
+		<div style="min-width:270px;float:left; padding:10px;">
+		<span class="newest2">Уже в продаже</span>
+		</div>
+		<div style="max-width:460px;float:left; padding:10px; background: #FFB015;">
+		<span class="title_new2">Michelin XMCL 540/70R24 (21.3R24) 168A8/B</span>
+		<span class="content_new2">Для фронтального погрузчика Амкадор, XT3 T-150, экскаватора-погрузчика</span>
+		</div>
+		</div>
+
+		</div>
+
+		<div class="clearfix"></div>
+
+
+
+		<!-- section16 - Не нашли свою технику на сайте? -->
+		<div id="block11"><a id="100">
+		<div class="block11_text">Не нашли свою технику на сайте?</div>
+		<hr class="block11">
+		<div class="block11_text2">Звоните: 8(800) 555-17-62</div>
+		<div class="block11_text4">Звонок бесплатный с любых телефонов по России</div>
+		<hr class="block11">
+		<div class="block11_text3">Или закажите обратный звонок<br />для бесплатной консультации!</div>
+		<div class="block11_text5">Наши менеджеры подберут и доставят ваш заказ<br />самой выгодной транспортной компанией</div>
+		<div class="block1_form" id="form_view1">
+		<center>
+			<!-- первая форма -->
+			<form action="mailer/smart.php" method="POST">
+				<input type="text" id="name2" name="name" class="input_form firstname" value placeholder="Название организации">
+				<input type="text" id="number2" name="phone" class="input_form number" value placeholder="Телефон (обязательно)">
+				<div id="error_msg2" class="error_message"></div>
+				<input type="submit" id="button2" class="form_button button__callback" value="Заказать обратный звонок" onclick="event.preventDefault()">
+			</form>
+		</center>
+		</div>
+		</div>
+
+		<div class="clearfix"></div>
+
+
+
+		<!-- section17 - О компании -->
+		<div id="block12">
+		<div class="block12_big">
+		<div class="logo_b"></div>
+		<div class="block12_1"><h2>О компании</h2><p>Группа компаний «Тесла-Пром» представляет на рынке Российской Федерации и стран СНГ высококачественную шинную продукцию ведущих брендов Европы и юго-восточной Азии</p>
+		<p>Официальный сайт в интернете: <a href="http://www.teslaprom.ru">http://teslaprom.ru</a></p>
+		<p style="font-size:7px;">* Группа компаний Тесла-Пром не занимается продажей техники и запчастей для техники.</p>
+		<p style="font-size:7px;">* Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями ч. 2 ст. 437 Гражданского кодекса Российской Федерации.</p>
+		</div>
+		<div class="block12_2"><img src="images/qr.gif" /></div>
+		</div>
+		</div>
+
+		<div class="clearfix"></div>
+
+
+
+
+
+
+
+
+
+
+		<div id="pop-up" class="popuptemp">
+		<center>
+		<div style="background:#FFBA18;width:520px;padding:20px 10px;" id="content_form1">
+		<span style="font-size:20px;font-weight:bold;font-family:Tahoma;">Оставьте заявку и получите скидку до 10%</span><br />
+		<span style="font-size:10px;font-weight:bold;font-family:Tahoma;">Наши менеджеры помогут вам подобрать шины для вашей техники<br/>и организуют их доставку по минимальным расценкам</span>
+		
+		<!-- первая форма -->
+		<form action="mailer/smart.php" method="POST" style="padding-top:20px;">
+			<input type="text" id="name1" name="name" class="input_form required defaultInvalidName firstname" value placeholder="Как к Вам обращаться">
+		    <input type="text" name="phone" class="input_form required defaultInvalidNumber number" value placeholder="Контактный телефон" id="number1">
+			<span id="error_msg1" class="error_message"></span>
+		    <input class="form_button button__callback" id="button1" type="submit" value="Получить скидку" onclick="event.preventDefault()">
+		</form>
+		
+		</div>
+		<a href="javascript:close_pop_up('#pop-up');"><div class="close"></div></a>
+		</center>
+		</div>
+
+
+		<div id="pop-up2" class="popuptemp">
+		<center>
+		<div style="background:#FFBA18;width:520px;padding:20px 10px;" id="content_form4">
+
+		<span style="font-size:20px;font-weight:bold;font-family:Tahoma;">Заполните поля формы и мы свяжемся с вами</span><br />
+		<span style="font-size:10px;font-weight:bold;font-family:Tahoma;">Наши менеджеры подберут и доставят ваш заказ самой выгодной транспортной компанией</span>
+		
+		<!-- вторая форма -->
+		<form action="mailer/smart.php" method="POST" style="padding-top:20px;" id="form_2">
+
+			<!--<input type="hidden" name="zapross" value="ok">-->
+
+			<input type="text" id="name4" name="name" class="input_form required defaultInvalidName firstname name" value placeholder="Ваше имя (название организации)">
+			<input type="text" id="mail4" name="email" class="input_form required defaultInvalidName firstname email" value placeholder="Электронный @ адрес">
+			<input type="text" id="number4" name="phone" class="input_form required defaultInvalidNumber number" value placeholder="Телефон (обязательно)">
+			<input type="text" id="gorod4" name="city" class="input_form required defaultInvalidName firstname" value placeholder="Город доставки">
+			<input type="text" id="razmer4" name="size" class="input_form required defaultInvalidName firstname" value placeholder="Размер шин и модель">
+			<input type="text" id="kol4" name="sum" class="input_form required defaultInvalidName firstname" value placeholder="Количество">
+
+			<span id="error_msg4" class="error_message"></span>
+			<input class="form_button button__callback1" id="button4" type="submit" value="Запросить расчет" onclick="event.preventDefault()">
+		</form>
+
+		</div>
+		<a href="javascript:close_pop_up('#pop-up2');"><div class="close"></div></a>
+		</center>
+		</div>
+
+
+		<div id="pop-up3">
+		<center>
+		<div style="background:#FFBA18;width:520px;padding:20px 10px;" id="content_form5">
+
+		<span style="font-size:20px;font-weight:bold;font-family:Tahoma;">Заполните поля формы для получения КП</span><br />
+		<span style="font-size:10px;font-weight:bold;font-family:Tahoma;">Коммерческое предложение вам будет выслано на адрес электронной почты</span>
+
+		<!-- третья форма -->
+		<form action="mailer/smart.php" method="POST" style="padding-top:20px;">
+
+			<!--<input type="hidden" id="zapros5" name="zapross" value="1">-->
+
+			<input type="text" id="name5" name="name" class="input_form required defaultInvalidName firstname name" value placeholder="Ваше имя (организация)">
+			<input type="text" id="mail5" name="email" class="input_form required defaultInvalidName firstname email" value placeholder="Электронный @ адрес">
+			<input type="text" name="phone" class="input_form required defaultInvalidNumber number" value placeholder="Телефон (обязательно)" id="number5">
+
+			<span id="error_msg5" class="error_message"></span>
+			<input class="form_button  button__callback2" id="button5" type="submit" value="Запросить" onclick="return false;">
+		</form>
+		</div>
+		<a href="javascript:close_pop_up('#pop-up3');"><div class="close"></div></a>
+		</center>
+		</div>
+
+		<!--<div id="pop-up-mail">-->
+		<!--<div style="background:#FFBA18;width:520px;padding:20px 10px;">-->
+		<!--<div style="text-align:center;padding:20px 30px 10px 30px;">-->
+		<!--	<span style="font-size:28px;font-weight:bold;font-family:Tahoma;">Наш менеджер свяжется с вами в течении 15 минут</span><br/>-->
+		<!--	<span style="font-size:12px;font-weight:bold;font-family:Tahoma;margin-top:20px;">В рабочее время компании:<br/>Будние дни с 7:00 до 16:00 по московскому времени</span>-->
+		<!--</div>-->
+		<!--</div>-->
+		<!--<center>-->
+		<!--<a href="javascript:close_pop_up('#pop-up');"><div class="close"></div></a>-->
+		<!--</center>-->
+		<!--</div>-->
+
+		<div id="pop-up-mail">
+		    <center>
+		    <div style="background:#FFBA18;max-width:520px;padding:20px 10px;">
+			<div style="text-align:center;padding:20px 30px 10px 30px;">
+			<p style="font-size:28px;font-weight:bold;font-family:Tahoma;">Ваша заявка отправлена!</p>
+			<span style="font-size:22px;font-weight:bold;font-family:Tahoma;">Наш менеджер свяжется с вами в течении 15 минут</span><br>
+			<span style="font-size:12px;font-weight:bold;font-family:Tahoma;margin-top:20px;">В рабочее время компании:<br/>Будние дни с 7:00 до 16:00 по московскому времени</span>
+			</div>
+			<div style="text-align:center;padding-bottom:20px;">
+			<center>
+			<a href="javascript:close_pop_up('#pop-up-mail');"><input class="form_button" type="submit" value="Закрыть окно"></a>
+			</center>
+			</div>
+			</div>
+			<a href="javascript:close_pop_up('#pop-up-mail');"><div class="close"></div></a>
+			</center>
+		</div>
+
+		<div id="overlay"></div>
+
+		<div id="top-up" style="display:none; width:100%; background-color:#000; opacity:0.9;position:fixed;top:0;min-height:30px;">
+		<center>
+		<span class="top-up"><a class="topper scrol" id="scrol999_2000" href="#">Выбор модели техники</a></span>
+		<span class="top-up"><a class="topper scrol" id="scrol999_99" href="#">Различия шин</a></span>
+		<span class="top-up"><a class="topper scrol" id="scrol999_102" href="#">Все размеры</a></span>
+		<span class="top-up"><a class="topper scrol" id="scrol999_98" href="#">Ремонт и Б/У шины</a></span>
+		</center>
+		</div>
+	</body>
+</html>

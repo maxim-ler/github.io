@@ -1,0 +1,79 @@
+.slider2-slides {
+	// нужно если slick+tab
+	min-height: 600px;
+
+	.slick-prev {
+		top: -20px;
+		right: auto;
+		left: 0;
+		z-index: 10;
+	
+		background: url('../img/arrow-left.jpg') 0 0 no-repeat;
+		width: 29px;
+		height: 29px;
+
+		&:hover {
+			background: url('../img/arrow-left-hover.jpg') 0 0 no-repeat;
+		}
+		
+		&:before {
+			content: '';
+		}
+	}
+
+	.slick-next {
+		top: -20px;
+		right: auto;
+		left: 40px;
+		z-index: 10;
+		
+		background: url('../img/arrow-right.jpg') 0 0 no-repeat;
+		width: 29px;
+		height: 29px;
+	
+		&:hover {
+			background: url('../img/arrow-right-hover.jpg') 0 0 no-repeat;
+		}
+		
+		&:before {
+			content: '';
+		}	
+	}
+
+	.slick-dots {
+		bottom: -30px;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);
+		
+		width: 300px;
+		height: 25px;
+
+		li {		
+			button {
+				&:before {
+					font-size: 16px;
+					color: #db3c3c;
+					opacity: 1;
+				}
+			}
+		}
+
+		// active
+		.slick-active {
+			button {
+				&:before {
+					font-size: 16px;
+					color: #7d7d7d;
+					opacity: 1;
+				}
+			}	
+		}
+	}
+	
+	.slick-slide {
+		outline: none;
+	}
+}

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Drina';
+    src: url('Drina.eot');
+    src: url('Drina.eot?#iefix') format('embedded-opentype'),
+        url('Drina.woff2') format('woff2'),
+        url('Drina.woff') format('woff'),
+        url('Drina.ttf') format('truetype'),
+        url('Drina.svg#Drina') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

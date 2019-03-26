@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Gulim';
+    src: url('Gulim.eot');
+    src: url('Gulim.eot?#iefix') format('embedded-opentype'),
+        url('Gulim.woff2') format('woff2'),
+        url('Gulim.woff') format('woff'),
+        url('Gulim.ttf') format('truetype'),
+        url('Gulim.svg#Gulim') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

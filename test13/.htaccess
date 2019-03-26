@@ -1,0 +1,2 @@
+ErrorDocument 403 http://teslaprom-ural.ru/index.php
+ErrorDocument 404 http://teslaprom-ural.ru/index.php

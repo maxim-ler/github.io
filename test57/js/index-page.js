@@ -115,7 +115,7 @@ $(function() {
 
 	// slick certificate-slider
 	$('.certificates-slider').slick({
-		slidesToShow: 1,
+		slidesToShow: 3,
 		slidesToScroll: 1,
 		adaptiveHeight: false,
 		arrows: true,
@@ -137,7 +137,7 @@ $(function() {
 				arrows: true,
 				//centerMode: true,
 				//centerPadding: '40px',
-				slidesToShow: 1
+				slidesToShow: 2
 			  }
 			},
 			{
@@ -258,22 +258,22 @@ $(function() {
 	$('.js-popup').on('click', function(e) {
 	  e.preventDefault();
 
-	  $('.popup').slideDown();
-	  $('.popup-overlay').css('display', 'block');
+	  $('.popup').slideDown(600);
+	  $('.popup-overlay').fadeIn();
 	  
 	  // поиск button close popup
 	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
 			// $('.popup').css('display', 'none');
 			// $('.popup-overlay').css('display', 'none');
 			// or
-			$('.popup').slideUp('300', function() {
+			$('.popup').slideUp(600, function() {
 				
 				// stop iframe video play after close popup
 				// var video = $(".popup iframe").attr("src");
 				// $(".popup iframe").attr("src", "");
 				// $(".popup iframe").attr("src", video);
 			});
-			$('.popup-overlay').css('display', 'none');
+			$('.popup-overlay').fadeOut();
 			// $('.popup').find("input").val(""); // off in wp
 	  });
 	});
@@ -286,16 +286,16 @@ $(function() {
 
 	  var prod = $(this).attr('data-production');
 	
-	  $('.'+prod).slideDown();
-	  $('.popup-overlay3').css('display', 'block');
+	  $('.'+prod).slideDown(600);
+	  $('.popup-overlay3').fadeIn();
 	  
 	  // поиск button close popup
 	  $('.js-close-popup3, .popup-overlay3').on('click', function(e) {
 			// $('.popup').css('display', 'none');
 			// $('.popup-overlay').css('display', 'none');
 			// or
-			$('.'+prod).slideUp();
-			$('.popup-overlay3').css('display', 'none');
+			$('.'+prod).slideUp(600);
+			$('.popup-overlay3').fadeOut();
 	  });
 	});
 
@@ -323,28 +323,28 @@ $(function() {
 			
 			$("form").trigger("reset");
 			
-			$('.popup').slideUp();
-			$('.popup-overlay').css('display', 'none');
+			$('.popup').slideUp(600);
+			$('.popup-overlay').fadeOut();
 
 
 
 			// открываем popup2
-			$('.popup2').slideDown();
-			$('.popup-overlay').css('display', 'block');
+			$('.popup2').slideDown(600);
+			$('.popup-overlay').fadeIn();
 				  
 		  // поиск button close popup
 		  $('.js-close-popup, .popup-overlay').on('click', function(e) {
 				// $('.popup').css('display', 'none');
 				// $('.popup-overlay').css('display', 'none');
 				// or
-				$('.popup2').slideUp('300', function() {
+				$('.popup2').slideUp(600, function() {
 					
 					// stop iframe video play after close popup
 					// var video = $(".popup iframe").attr("src");
 					// $(".popup iframe").attr("src", "");
 					// $(".popup iframe").attr("src", video);
 				});
-				$('.popup-overlay').css('display', 'none');
+				$('.popup-overlay').fadeOut();
 				// $('.popup').find("input").val(""); // off in wp
 		  });
 

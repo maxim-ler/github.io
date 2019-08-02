@@ -15,7 +15,7 @@ $(function() {
 
 	// slick our-clients-slider
 	$('.our-clients-slider').slick({
-		slidesToShow: 4,
+		slidesToShow: 3,
 		slidesToScroll: 1,
 		adaptiveHeight: false,
 		arrows: true,

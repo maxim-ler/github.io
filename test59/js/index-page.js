@@ -8,6 +8,15 @@ $(function() {
 
 
 
+	$('.our-clients .container .our-clients-slider img').on('mouseenter', function(e) {
+		// alert(e.target.src);
+		// alert($(this).attr('src'));
+
+		$(this).attr('src', $(this).attr('src'))
+	});
+
+
+
 	// +7 (___) ___-__-__
 	$(".phone").mask("+7 (999) 999-99-99");
 	

@@ -278,6 +278,29 @@ $(function() {
 	  });
 	});
 
+	$('.js-popup4').on('click', function(e) {
+	  e.preventDefault();
+
+	  $('.popup4').slideDown(600);
+	  $('.popup-overlay').fadeIn();
+	  
+	  // поиск button close popup
+	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
+			// $('.popup').css('display', 'none');
+			// $('.popup-overlay').css('display', 'none');
+			// or
+			$('.popup4').slideUp(600, function() {
+				
+				// stop iframe video play after close popup
+				// var video = $(".popup iframe").attr("src");
+				// $(".popup iframe").attr("src", "");
+				// $(".popup iframe").attr("src", video);
+			});
+			$('.popup-overlay').fadeOut();
+			// $('.popup').find("input").val(""); // off in wp
+	  });
+	});
+
 	$('.js-popup3').on('click', function(e) {
 	  e.preventDefault();
 

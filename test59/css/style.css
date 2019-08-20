@@ -1659,9 +1659,13 @@ body .container {
   font-size: 18px;
   color: #2d2d2d;
   text-align: center;
-  padding: 5px;
-  width: 17%;
+  padding: 5px 0;
+  width: 16%;
   border: 1px solid #d0d0d0;
+}
+
+.popup .popup__list .popup__right .myTable tr td:last-child {
+  width: 25%;
 }
 
 .popup .popup__list .popup__right p {

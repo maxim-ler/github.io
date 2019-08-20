@@ -523,6 +523,17 @@ $(function() {
 					// $(".popup iframe").attr("src", video);
 				});
 				$('.popup-overlay').fadeOut();
+				$('.popup-overlay10').fadeOut();
+				$('.popup-overlay11').fadeOut();
+				$('.popup-overlay12').fadeOut();
+				$('.popup-overlay13').fadeOut();
+				$('.popup-overlay14').fadeOut();
+				$('.popup-overlay15').fadeOut();
+				$('.popup-overlay16').fadeOut();
+				$('.popup-overlay17').fadeOut();
+				$('.popup-overlay18').fadeOut();
+				$('.popup-overlay19').fadeOut();
+				$('.popup-overlay20').fadeOut();
 				// $('.popup').find("input").val(""); // off in wp
 		  });
 

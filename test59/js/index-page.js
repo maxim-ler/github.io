@@ -264,28 +264,174 @@ $(function() {
 
 	// popup
 	// ставим на кнопку которая вызывает данный popup
-	$('.js-popup').on('click', function(e) {
+	// попапы на товары 1-11 js-popup10 js-popup11 ... js-popup20
+	$('.js-popup10').on('click', function(e) {
 	  e.preventDefault();
 
-	  $('.popup').slideDown(600);
-	  $('.popup-overlay').fadeIn();
+	  $('.popup10').slideDown(600);
+	  $('.popup-overlay10').fadeIn();
 	  
 	  // поиск button close popup
-	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
+	  $('.js-close-popup, .popup-overlay10').on('click', function(e) {
 			// $('.popup').css('display', 'none');
 			// $('.popup-overlay').css('display', 'none');
 			// or
-			$('.popup').slideUp(600, function() {
-				
+			$('.popup10').slideUp(600, function() {
 				// stop iframe video play after close popup
 				// var video = $(".popup iframe").attr("src");
 				// $(".popup iframe").attr("src", "");
 				// $(".popup iframe").attr("src", video);
 			});
-			$('.popup-overlay').fadeOut();
+			$('.popup-overlay10').fadeOut();
 			// $('.popup').find("input").val(""); // off in wp
 	  });
 	});
+	$('.js-popup11').on('click', function(e) {
+	  e.preventDefault();
+
+	  $('.popup11').slideDown(600);
+	  $('.popup-overlay11').fadeIn();
+	  
+	  // поиск button close popup
+	  $('.js-close-popup, .popup-overlay11').on('click', function(e) {
+			$('.popup11').slideUp(600, function() {
+				
+			});
+			$('.popup-overlay11').fadeOut();
+	  });
+	});
+	$('.js-popup12').on('click', function(e) {
+	  e.preventDefault();
+
+	  $('.popup12').slideDown(600);
+	  $('.popup-overlay12').fadeIn();
+	  
+	  // поиск button close popup
+	  $('.js-close-popup, .popup-overlay12').on('click', function(e) {
+			$('.popup12').slideUp(600, function() {
+				
+			});
+			$('.popup-overlay12').fadeOut();
+	  });
+	});
+	$('.js-popup13').on('click', function(e) {
+	  e.preventDefault();
+
+	  $('.popup13').slideDown(600);
+	  $('.popup-overlay13').fadeIn();
+	  
+	  // поиск button close popup
+	  $('.js-close-popup, .popup-overlay13').on('click', function(e) {
+			$('.popup13').slideUp(600, function() {
+				
+			});
+			$('.popup-overlay13').fadeOut();
+	  });
+	});
+	$('.js-popup14').on('click', function(e) {
+	  e.preventDefault();
+
+	  $('.popup14').slideDown(600);
+	  $('.popup-overlay14').fadeIn();
+	  
+	  // поиск button close popup
+	  $('.js-close-popup, .popup-overlay14').on('click', function(e) {
+			$('.popup14').slideUp(600, function() {
+				
+			});
+			$('.popup-overlay14').fadeOut();
+	  });
+	});
+	$('.js-popup15').on('click', function(e) {
+	  e.preventDefault();
+
+	  $('.popup15').slideDown(600);
+	  $('.popup-overlay15').fadeIn();
+	  
+	  // поиск button close popup
+	  $('.js-close-popup, .popup-overlay15').on('click', function(e) {
+			$('.popup15').slideUp(600, function() {
+				
+			});
+			$('.popup-overlay15').fadeOut();
+	  });
+	});
+	$('.js-popup16').on('click', function(e) {
+	  e.preventDefault();
+
+	  $('.popup16').slideDown(600);
+	  $('.popup-overlay16').fadeIn();
+	  
+	  // поиск button close popup
+	  $('.js-close-popup, .popup-overlay16').on('click', function(e) {
+			$('.popup16').slideUp(600, function() {
+				
+			});
+			$('.popup-overlay16').fadeOut();
+	  });
+	});
+	$('.js-popup17').on('click', function(e) {
+	  e.preventDefault();
+
+	  $('.popup17').slideDown(600);
+	  $('.popup-overlay17').fadeIn();
+	  
+	  // поиск button close popup
+	  $('.js-close-popup, .popup-overlay17').on('click', function(e) {
+			$('.popup17').slideUp(600, function() {
+				
+			});
+			$('.popup-overlay17').fadeOut();
+	  });
+	});
+	$('.js-popup18').on('click', function(e) {
+	  e.preventDefault();
+
+	  $('.popup18').slideDown(600);
+	  $('.popup-overlay18').fadeIn();
+	  
+	  // поиск button close popup
+	  $('.js-close-popup, .popup-overlay18').on('click', function(e) {
+			$('.popup18').slideUp(600, function() {
+				
+			});
+			$('.popup-overlay18').fadeOut();
+	  });
+	});
+	$('.js-popup19').on('click', function(e) {
+	  e.preventDefault();
+
+	  $('.popup19').slideDown(600);
+	  $('.popup-overlay19').fadeIn();
+	  
+	  // поиск button close popup
+	  $('.js-close-popup, .popup-overlay19').on('click', function(e) {
+			$('.popup19').slideUp(600, function() {
+				
+			});
+			$('.popup-overlay19').fadeOut();
+	  });
+	});
+	$('.js-popup20').on('click', function(e) {
+	  e.preventDefault();
+
+	  $('.popup20').slideDown(600);
+	  $('.popup-overlay20').fadeIn();
+	  
+	  // поиск button close popup
+	  $('.js-close-popup, .popup-overlay20').on('click', function(e) {
+			$('.popup20').slideUp(600, function() {
+				
+			});
+			$('.popup-overlay20').fadeOut();
+	  });
+	});
+
+
+
+
+
+
 
 	$('.js-popup4').on('click', function(e) {
 	  e.preventDefault();

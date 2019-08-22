@@ -811,14 +811,16 @@ body .container {
 
 .our-clients .container .our-clients-slider div img {
   height: 10vh;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
   -webkit-transition: all .5s;
   transition: all .5s;
 }
 
 .our-clients .container .our-clients-slider div img:hover {
   opacity: .7;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 .our-clients .container .our-clients-slider .slick-prev {
@@ -935,14 +937,16 @@ body .container {
 
 .our-partners .container .our-partners-slider div img {
   height: 8vh;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
   -webkit-transition: all .5s;
   transition: all .5s;
 }
 
 .our-partners .container .our-partners-slider div img:hover {
   opacity: .7;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 .our-partners .container .our-partners-slider .slick-prev {

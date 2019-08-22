@@ -221,7 +221,7 @@ $(function() {
 		//delegate: 'a', // child items selector, by clicking on it popup will open, example .parent-container a
 		zoom: {
 			enabled: true,
-			duration: 300 // продолжительность анимации. Не меняйте данный параметр также и в CSS
+			duration: 600 // продолжительность анимации. Не меняйте данный параметр также и в CSS
 		},
 	  // other options
 	});

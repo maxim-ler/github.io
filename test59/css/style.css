@@ -816,7 +816,9 @@ body .container {
 }
 
 .our-clients .container .our-clients-slider div img:hover {
-  opacity: .8;
+  opacity: .7;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
 }
 
 .our-clients .container .our-clients-slider .slick-prev {
@@ -938,7 +940,9 @@ body .container {
 }
 
 .our-partners .container .our-partners-slider div img:hover {
-  opacity: .8;
+  opacity: .7;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
 }
 
 .our-partners .container .our-partners-slider .slick-prev {

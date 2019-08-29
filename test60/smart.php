@@ -78,10 +78,9 @@
  		
 		// работаем с файлами attachment
  		// if (!empty($_FILES['upload']['name'])) {
- 		if(isset($_FILES['upload'])) {
+ 		if(isset($_FILES['upload']) && $_FILES['upload']['error'] == UPLOAD_ERR_OK) {
 
- 			// файл передан
-
+ 			// файл загружен
  			$str_path = $_FILES['upload']['tmp_name'];
 			// $send = mail_file($address, $sub, $mes, $email2, $str_path);
 			$send = mail_attachment($_FILES['upload']['name'], $_FILES['upload']['tmp_name'], $address, $email2, '', '', $sub, $mes);

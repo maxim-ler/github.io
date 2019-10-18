@@ -18,7 +18,7 @@ $(function() {
 		//accessibility: false,
 		//centerMode: true,
 		//centerPadding: '60px',
-		autoplay: true,
+		autoplay: false,
 		autoplaySpeed: 3000,
 		prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;"></button>',
 		nextArrow: '<button class="slick-next slick-arrow" aria-label="Previous" type="button" style="display: block;"></button>',

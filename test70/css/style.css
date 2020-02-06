@@ -1,5 +1,7 @@
 @import "../libs/normalize.css";
 
+@import "../libs/animate.css";
+
 @import "../libs/slick/slick.css";
 
 @import "../libs/slick/slick-theme.css";
@@ -520,6 +522,18 @@ body .wrap {
   position: relative;
 }
 
+.features2-list__item:nth-child(3) img {
+  bottom: -37px;
+}
+
+.features2-list__item:nth-child(4) img {
+  bottom: -37px;
+}
+
+.features2-list__item:nth-child(5) img {
+  bottom: -17px;
+}
+
 .features2-list__item h3 {
   font-family: "LatoBold", sans-serif;
   text-transform: uppercase;
@@ -977,7 +991,8 @@ body .wrap {
 .slider-bag .wrap .slick-dots li {
   width: 17px;
   height: 17px;
-  margin-right: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .slider-bag .wrap .slick-dots li:last-child {
@@ -1842,6 +1857,8 @@ body .wrap {
 
   .bag .wrap-outer {
     background-position: center center;
+    -webkit-background-size: contain;
+    background-size: contain;
   }
 
   .bag-list__left {
@@ -1938,6 +1955,11 @@ body .wrap {
   .reviews .wrap > p {
     font-size: 26px;
     text-align: center;
+  }
+
+  .reviews .wrap .reviews-list__item p {
+    font-size: 16px;
+    line-height: 22px;
   }
 
   .contacts .wrap > h2 {
@@ -2136,7 +2158,6 @@ body .wrap {
 
   .features2-list__item {
     width: 100%;
-    min-height: auto;
   }
 
   .how-work-list {

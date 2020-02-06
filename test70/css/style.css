@@ -206,7 +206,7 @@ body .wrap {
 }
 
 .header-menu-promo {
-  background: #fff url(../img/header-bg.jpg) 50% 50% no-repeat;
+  background: #fff url(../img/header-bg.jpg) 100% 50% no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   min-height: 910px;
@@ -631,7 +631,7 @@ body .wrap {
   font-weight: 300;
   font-size: 40px;
   color: #242222;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .how-work-list {
@@ -1023,6 +1023,7 @@ body .wrap {
 
 .slider-bag .wrap .slick-slide {
   outline: none;
+  padding: 0 15px;
 }
 
 .slider-bag .wrap .slick-dotted.slick-slider {
@@ -1152,7 +1153,7 @@ body .wrap {
   color: #fff;
 }
 
-.reviews .wrap .reviews-list__item a {
+.reviews .wrap .reviews-list__item p a {
   font-family: "LatoSemiBold", sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -1283,6 +1284,7 @@ body .wrap {
 
 .reviews .wrap .slick-slide {
   outline: none;
+  padding: 0 15px;
 }
 
 .reviews .wrap .slick-dotted.slick-slider {

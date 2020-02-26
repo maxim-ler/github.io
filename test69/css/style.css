@@ -697,11 +697,11 @@ body .wrap {
   background: url(../img/seminar-icon3.png) 0 50% no-repeat, url(../img/seminar-icon3.png) right 50% no-repeat;
 }
 
-.specialists .wrap > div {
+.specialists .wrap .specialists-button {
   text-align: center;
 }
 
-.specialists .wrap > div a {
+.specialists .wrap .specialists-button a {
   display: inline-block;
   vertical-align: top;
   padding: 20px 105px;
@@ -1930,10 +1930,13 @@ padding: 0;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .pagespikers-text__right-list ul {
   width: 48%;
+  margin-bottom: 20px;
 }
 
 .pagespikers-text__right {

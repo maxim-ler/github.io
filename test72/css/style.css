@@ -409,6 +409,21 @@ body .wrap {
   flex-basis: 25%;
 }
 
+.features__item span {
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+  background: -o-linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+  background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-weight: 700;
+  color: #000;
+  font-size: 150px;
+  line-height: 150px;
+  display: block;
+}
+
 .features__item p {
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
   font-weight: 700;

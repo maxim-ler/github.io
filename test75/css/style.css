@@ -205,7 +205,7 @@ body .wrap {
 .header__right a {
   display: block;
   text-align: center;
-  padding: 15px 0;
+  padding: 15px;
   background: #1d6296;
   font-family: 'Roboto', 'Arial', sans-serif;
   font-weight: 500;
@@ -408,13 +408,8 @@ body .wrap {
 }
 
 .features__item {
-<<<<<<< HEAD
   -ms-flex-preferred-size: 32%;
   flex-basis: 32%;
-=======
-  -ms-flex-preferred-size: 25%;
-  flex-basis: 25%;
->>>>>>> b75160e8dbf9d473025e8bc1161b7f7890833dcf
   margin-bottom: 40px;
   text-align: center;
 }
@@ -611,7 +606,6 @@ body .wrap {
 }
 
 .partners .slider__partners .slick-dots .slick-active button:before {
-<<<<<<< HEAD
   background: #1d6296;
   color: transparent;
   opacity: 1;
@@ -620,13 +614,6 @@ body .wrap {
   left: 0;
   width: 20px;
   height: 20px;
-=======
-  font-size: 20px;
-  color: #1d6296;
-  opacity: 1;
-  top: 1px;
-  left: 0;
->>>>>>> b75160e8dbf9d473025e8bc1161b7f7890833dcf
 }
 
 .partners .slider__partners .slick-slide {
@@ -659,11 +646,7 @@ body .wrap {
 }
 
 .certificates .slider__certificates .slick-prev {
-<<<<<<< HEAD
   top: 48%;
-=======
-  top: 50%;
->>>>>>> b75160e8dbf9d473025e8bc1161b7f7890833dcf
   left: 0;
   right: auto;
   z-index: 10;
@@ -681,11 +664,7 @@ body .wrap {
 }
 
 .certificates .slider__certificates .slick-next {
-<<<<<<< HEAD
   top: 48%;
-=======
-  top: 50%;
->>>>>>> b75160e8dbf9d473025e8bc1161b7f7890833dcf
   right: 0;
   left: auto;
   z-index: 10;
@@ -1115,7 +1094,6 @@ body .wrap {
     font-size: 36px;
   }
 
-<<<<<<< HEAD
   .promo__item h1 {
     width: 100%;
   }
@@ -1124,8 +1102,6 @@ body .wrap {
     text-align: center;
   }
 
-=======
->>>>>>> b75160e8dbf9d473025e8bc1161b7f7890833dcf
   .services .wrap h2 {
     font-size: 40px;
   }
@@ -1259,13 +1235,6 @@ body .wrap {
     padding: 10px 0;
   }
 
-<<<<<<< HEAD
-=======
-  .promo__item h1 {
-    width: 100%;
-  }
-
->>>>>>> b75160e8dbf9d473025e8bc1161b7f7890833dcf
   .services .wrap h2 {
     font-size: 31px;
   }

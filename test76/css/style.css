@@ -233,21 +233,36 @@ body .wrap {
   margin-right: 0;
 }
 
-.menu ul li.active {
+.menu ul li:hover {
   position: relative;
 }
 
-.menu ul li.active:after {
+.menu ul li:hover:after {
   content: "";
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  background: #15c39a;
-  width: 50%;
-  height: 2px;
+  background: #72191c;
+  width: 100%;
+  height: 3px;
+}
+
+.menu ul li:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border: 8px solid transparent;
+  border-top: 8px solid #72191c;
+  display: block;
+  width: 0;
+  height: 0;
 }
 
 .menu ul li a {

@@ -623,7 +623,7 @@ body .wrap {
   font-weight: 700;
   color: #fff;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   padding-left: 30px;
   background: url(../img/phone2.png) 0 50% no-repeat;
 }
@@ -875,6 +875,16 @@ body .wrap {
     font-size: 36px;
   }
 
+  .catalog__list {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .catalog__item {
+    -ms-flex-preferred-size: 46%;
+    flex-basis: 46%;
+  }
+
   .catalog__item h3 {
     font-size: 26px;
   }
@@ -904,6 +914,10 @@ body .wrap {
 
   .catalog2__item h3 {
     font-size: 26px;
+  }
+
+  .catalog2__item h3 {
+    font-size: 22px;
   }
 
   .promo2 {
@@ -937,6 +951,12 @@ body .wrap {
     -ms-flex-preferred-size: 49%;
     flex-basis: 49%;
   }
+
+  .footer__right a {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -946,8 +966,8 @@ body .wrap {
   }
 
   .header__address {
-    -ms-flex-preferred-size: 59%;
-    flex-basis: 59%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
   }
 
   .header__address a {
@@ -995,11 +1015,13 @@ body .wrap {
   .catalog__list {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
   }
 
   .catalog__item {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 90%;
+    flex-basis: 90%;
   }
 
   .catalog__item a img {
@@ -1040,11 +1062,13 @@ body .wrap {
   .catalog2__list {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
   }
 
   .catalog2__item {
-    -ms-flex-preferred-size: 49%;
-    flex-basis: 49%;
+    -ms-flex-preferred-size: 46%;
+    flex-basis: 46%;
   }
 
   .catalog2__item a img {
@@ -1078,13 +1102,21 @@ body .wrap {
   .header__address a {
     background-position: 0 50%;
     padding-left: 0;
+    width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .header__phone {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    text-align: center;
+    -ms-flex-preferred-size: 300px;
+    flex-basis: 300px;
     padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 
   .header__btn {
@@ -1142,8 +1174,8 @@ body .wrap {
   }
 
   .catalog2__item {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 90%;
+    flex-basis: 90%;
   }
 
   .footer__left {

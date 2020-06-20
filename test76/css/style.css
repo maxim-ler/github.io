@@ -292,7 +292,7 @@ body .wrap {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #72191c;
-  font-size: 60px;
+  font-size: 56px;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
@@ -342,6 +342,7 @@ body .wrap {
   font-weight: 700;
   color: #272222;
   font-size: 45px;
+  font-size: 40px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 35px;
@@ -386,6 +387,7 @@ body .wrap {
   color: #fff;
   text-transform: uppercase;
   font-size: 30px;
+  font-size: 26px;
 }
 
 .catalog__item-last p {
@@ -405,6 +407,7 @@ body .wrap {
   font-weight: 700;
   color: #272222;
   font-size: 45px;
+  font-size: 40px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 40px;

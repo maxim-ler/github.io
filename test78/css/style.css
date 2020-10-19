@@ -305,7 +305,7 @@ body .wrap {
   text-align: center;
   width: 150px;
   height: 100%;
-  z-index: 10;
+  z-index: 210;
   -webkit-box-shadow: 100px 0 115px rgba(0, 0, 0, 0.5);
   box-shadow: 100px 0 115px rgba(0, 0, 0, 0.5);
 }
